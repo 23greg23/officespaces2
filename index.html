@@ -7,12 +7,44 @@
 <title>Office Spaces v2a</title>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link href="css/officespaces2.css" rel="stylesheet" type="text/css">
+
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<link href="css/slideshow.css" rel="stylesheet" type="text/css" >
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <div class="jquery-script-clear"></div>
-</div>
-</div>
+
+
+<div id="slideshow" class="slideshow fullscreen">
+  <!-- Below images are in the gallery -->
+  <!-- thumbnail images: Start -->
+  <div class="thumbs-container bottom">
+    <div id="prev-btn" class="prev"><i class="fa fa-chevron-left fa-3x">
+      <h3 style="font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px;"> < </h3>
+      </i></div>
+    <ul class="thumbs">
+      <li data-thumb-id="1" class="thumb active" style="background-image: url('images/thumb/img14-thumb.jpg')"></li>
+      <li data-thumb-id="2" class="thumb" style="background-image: url('images/thumb/img13-thumb.jpg')"></li>
+      <li data-thumb-id="3" class="thumb" style="background-image: url('images/thumb/img12-thumb.jpg')"></li>
+      <li data-thumb-id="4" class="thumb" style="background-image: url('images/thumb/img11-thumb.jpg')"></li>
+      <li data-thumb-id="5" class="thumb" style="background-image: url('images/thumb/img10-thumb.jpg')"></li>
+      <li data-thumb-id="6" class="thumb" style="background-image: url('images/thumb/img9-thumb.jpg')"></li>
+      <li data-thumb-id="7" class="thumb" style="background-image: url('images/thumb/img8-thumb.jpg')"></li>
+      <li data-thumb-id="8" class="thumb" style="background-image: url('images/thumb/img7-thumb.jpg')"></li>
+      <li data-thumb-id="9" class="thumb" style="background-image: url('images/thumb/img6-thumb.jpg')"></li>
+      <li data-thumb-id="10" class="thumb" style="background-image: url('images/thumb/img1-thumb.jpg')"></li>
+      <li data-thumb-id="11" class="thumb" style="background-image: url('images/thumb/img5-thumb.jpg')"></li>
+      <li data-thumb-id="12" class="thumb" style="background-image: url('images/thumb/img2-thumb.jpg')"></li>
+      <li data-thumb-id="13" class="thumb" style="background-image: url('images/thumb/img3-thumb.jpg')"></li>
+      <li data-thumb-id="14" class="thumb" style="background-image: url('images/thumb/img4-thumb.jpg')"></li>
+    </ul>
+    <div id="next-btn" class="next"><i class="fa fa-chevron-right fa-3x">
+      <h3 style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px;"> > </h3>
+      </i> </div>
+  </div>
+<!-- thumbnails images: End-->
 <!--Richard start-->
 <div id="imageContainer">
 <div id="richard" class="img-wrapper active">
@@ -27,7 +59,8 @@
     <area shape="poly" alt="orange" title="orange" onclick="selectRegion('orange')"
           coords="802,27,1096,27,1096,174,802,174,838,101">
 </map>
-</div></div>
+</div><!--image cont end-->
+</div><!--image wrapper end-->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="image-map.js"></script>
 <script>
